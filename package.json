@@ -11,6 +11,12 @@
     "test": "jest",
     "test:watch": "yarn jest --watch"
   },
+  "husky":{
+    "src/**/*":[
+      "yarn lint --fix",
+      "yarn test --bail"
+    ]
+  },
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix"
