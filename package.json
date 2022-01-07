@@ -12,14 +12,14 @@
     "test:watch": "yarn jest --watch"
   },
   "husky":{
-    "src/**/*":[
-      "yarn lint --fix",
-      "yarn test --bail"
-    ]
+    "hooks":{
+      "pre-commit":"lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix"
+      "yarn lint --fix",
+      "yarn test --bail"
     ]
   },
   "dependencies": {
