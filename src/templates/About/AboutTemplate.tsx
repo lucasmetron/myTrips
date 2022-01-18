@@ -4,13 +4,14 @@ import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import * as S from './styles'
 
 const AboutTemplate = () => {
+  
   return (
     <S.Content>
       <LinkWrapper href="/">
         <CloseOutline size={32} />
       </LinkWrapper>
 
-      <S.Heading>Mytrips</S.Heading>
+      <S.Heading>{process.env.NODE_ENV || 'teste'} || tes</S.Heading>
 
       <S.Body>
         <p>
