@@ -1,14 +1,9 @@
 import { GraphQLClient } from 'graphql-request'
 
-const endpoint = 'https://api-sa-east-1.graphcms.com/v2/ckyeb1pig0s8v01xwc9e42mgl/master'
-const token = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2NDI1MDUxNjUsImF1ZCI6WyJodHRwczovL2FwaS1zYS1lYXN0LTEuZ3JhcGhjbXMuY29tL3YyL2NreWViMXBpZzBzOHYwMXh3YzllNDJtZ2wvbWFzdGVyIiwiaHR0cHM6Ly9tYW5hZ2VtZW50LW5leHQuZ3JhcGhjbXMuY29tIl0sImlzcyI6Imh0dHBzOi8vbWFuYWdlbWVudC5ncmFwaGNtcy5jb20vIiwic3ViIjoiZDU3YzdmOTUtYjNlZS00Mzk3LWI5ZmQtMDY2OGE3NjQxM2NlIiwianRpIjoiY2t5azE2MTRlMWpyMDAxeXk5MnBsM3N1NiJ9.tm4KvfZ4H4xgBD1NXCHkrk7h12_-YWor388ICvTMMk_1_8u7n0Yt3kVKo_Yk4KXXqER23LWNpRsTWlFnDuydZPp-WME-M2x3znlCPHZqGQeb3LntJI3S7JRB-LVaTNKjL4bnNeKfSIA6gz6jkTRh4_OmLux9q6oNMCpaJRAOH7g_PPA2x6F60YfIho-glf9q2eb8CkXE12UJ-HTFZbFOyFxr6fzSP6bFlMHbpb_mU5vjfkB255Qh7SyKRiIHs7ZRcpCNiDzDa4ENM1bPz7YZtMHn6xnkx8nnmDMpXjoa4c9I8xdQPbzwxxoBpZsfaXCZZ6_IAeG28oSsDBhaU7dzLyGOvPMN7olNarmJGdY98IytggEPcYym-zOpuCoTcftbYIB3SRRnvk1_4cfHmMF3KTcM_5AdziGNthnZKXFkDfICqHUS8SNYgZqJSp_Hw8ZPuhcpRYenLfISTeQB8sfR7GFEcUYxoDT0nCx4WHqLMR5IjPoHa0dHJtb7V88BHQu50fXGSh15LZ3Kufmr3v5pYguGJVv9GPmwCymurZ-DgfdHJZZ8GzSoH793AFoeYoL3zbwq9rWxmLBqSme6_artZ6Fy3Ms857CqJx3ldnGmKPxLVb3Nh8L9EVHqs3j4xHc0fbBkwbtt7j3yO_EzuHMEGGhrGBUJqs2AHFpfMteeP5E'
+const endpoint = process.env.GRAPHQL_HOST || ''
+const token = process.env.GRAPHQL_TOKEN || ''
 
-const end = process.env.GRAPHQL_HOST || ''
-const to = process.env.GRAPHQL_TOKEN || ''
-  console.log('endpoint', end)
-  console.log('token', to)
-
-const client = new GraphQLClient(end, {
+const client = new GraphQLClient(endpoint, {
   headers: {
     authorization: `Bearer ${token}`
   }
