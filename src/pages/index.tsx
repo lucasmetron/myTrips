@@ -8,8 +8,8 @@ const Map = dynamic(() => import('../components/Map/Map'), { ssr: false })
 export default function Index() {
   return (
     <>
-      <LinkWrapper href={'/About'}>
-        <InfoOutline size={32} aria-label="About" />
+      <LinkWrapper href={'/about'}>
+        <InfoOutline size={32} aria-label="about" />
       </LinkWrapper>
       <Map
         places={[
