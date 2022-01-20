@@ -3,13 +3,12 @@ import LinkWrapper from '../../components/LinkWrapper/LinkWrapper'
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import * as S from './styles'
 
-export type PageTemplateProps = { 
-  heading: string,
+export type PageTemplateProps = {
+  heading: string
   body: string
 }
 
-const PageTemplate = ({heading, body}: PageTemplateProps) => {
-  
+const PageTemplate = ({ heading, body }: PageTemplateProps) => {
   return (
     <S.Content>
       <LinkWrapper href="/">
@@ -20,7 +19,7 @@ const PageTemplate = ({heading, body}: PageTemplateProps) => {
 
       <S.Body>
         {/* como iremos receber um html, precisa ser dessa forma */}
-        <div dangerouslySetInnerHTML={{__html:body}}/>
+        <div dangerouslySetInnerHTML={{ __html: body }} />
       </S.Body>
     </S.Content>
   )
