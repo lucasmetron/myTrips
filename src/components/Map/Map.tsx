@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
@@ -16,6 +17,8 @@ export type MapProps = {
 }
 
 const Map = ({ places }: MapProps) => {
+  const router = useRouter()
+
   return (
     <MapContainer
       center={[0, 0]}
@@ -35,6 +38,11 @@ const Map = ({ places }: MapProps) => {
             key={`place-${id}`}
             position={[latitude, longitude]}
             title={name}
+            eventHandlers={{
+              click: () => {
+                router.push(`place/${slug}`)
+              }
+            }}
           >
             <Popup>O slug do local é {slug}</Popup>
           </Marker>

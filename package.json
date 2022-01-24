@@ -12,11 +12,6 @@
     "test:watch": "yarn jest --watch",
     "codegen": "graphql-codegen --config codegen.yml"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
@@ -57,7 +52,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "husky": "^7.0.4",
     "jest": "^27.4.7",
     "jest-styled-components": "^7.0.8",
     "lint-staged": "^12.1.5",
