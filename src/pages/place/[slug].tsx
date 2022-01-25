@@ -21,7 +21,7 @@ export default function Place({ place }: PlaceTemplateProps) {
 
 export async function getStaticPaths() {
   const { places } = await client.request<GetPlacesQuery>(GET_PLACES, {
-    first: 3
+    first: 10
   })
 
   const paths = places.map(({ slug }) => ({
@@ -39,7 +39,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   )
 
   if (!place) return { notFound: true }
-  console.log(place)
 
   return {
     props: {
