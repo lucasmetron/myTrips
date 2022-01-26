@@ -3,9 +3,10 @@
   
 </div>
 
-### - Estou estudando NextJs e GraphQL, por isso fiz este projeto para aplicar os meus conhecimentos. Neste projeto pude aplicar a geração de páginas dinâmicas, as principais funções do NextJS que são: getStaticProps e getStaticPaths. E junto com isso támbem pude aplicar o Fallback, que verifica se a página estática já foi carregada, se sim encaminha para página e se não, encaminha para página de erro 404. 
+### - A ideia do projeto é uma aplicação que mostra todos os lugares que já visitei e ainda quero visitar hehe
+### - Fiz este projeto para aplicar os meus conhecimentos em NextJs e GraphQL, que estou estudando no momento. Aqui,  pude aplicar a geração de páginas dinâmicas e as principais funções do NextJS: getStaticProps e getStaticPaths. Junto com isso, também pude aplicar o Fallback, que verifica se a página estática já foi carregada - se sim, segue para a página; se não, encaminha para página de erro 404.
 
-### - Aproveitei para integrar o meu projeto com o GraphCMS, então todos os dados como textos e fotos, estão vindo do GraphCMS.
+### - Aproveitei para integrar o meu projeto com o GraphCMS, então todos os dados, textos e fotos estão vindo do GraphCMS.
 ### - Nesta aplicação foram usados as seguintes tecnologias:
 
 #### *NextJS
@@ -15,10 +16,8 @@
 #### *Styled Component
 
 
-
 ### Demonstração da aplicação
 ![Tela inicial](./src/assets/mytrips.gif)
-
 
 ### Como visualizar aplicação em sua máquina:
 
