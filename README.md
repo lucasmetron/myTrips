@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="./src/assets/logo.svg" alt="Podcastr logo" style='width: 500px'>
+  
+</div>
 
-## Getting Started
+### - Estou estudando NextJs e GraphQL, por isso fiz este projeto para aplicar os meus conhecimentos. Neste projeto pude aplicar a geração de páginas dinâmicas, as principais funções do NextJS que são: getStaticProps e getStaticPaths. E junto com isso támbem pude aplicar o Fallback, que verifica se a página estática já foi carregada, se sim encaminha para página e se não, encaminha para página de erro 404. 
 
-First, run the development server:
+### - Aproveitei para integrar o meu projeto com o GraphCMS, então todos os dados como textos e fotos, estão vindo do GraphCMS.
+### - Nesta aplicação foram usados as seguintes tecnologias:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+#### *NextJS
+#### *GraphQL 
+### *GraphCMS
+#### *Styled Component
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Demonstração da aplicação
+![Tela inicial](./src/assets/mytrips.gif)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+### Como visualizar aplicação em sua máquina:
 
-To learn more about Next.js, take a look at the following resources:
+#### 1º Passo: Instale o git, veja o passo a passo em https://git-scm.com/downloads
+#### 2º Passo: Instale o node, veja o passo a passo em https://nodejs.org/en/download/
+#### 3º Passo: Abra o terminal como administrador e execute o comando: ' git clone https://github.com/lucasmetron/myTrips.git '
+#### 4º Passo: Digite o comando ' cd myTrips ' para acessar a pasta do projeto
+#### 5º Passo: Digite o comando ' yarn install ' e ao finalizar digite o comando ' yarn dev '
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Gostou do meu projeto!? :D Entre em contato comigo! 
+[Linkedin](https://www.linkedin.com/in/lucas-rosa-058683102/) <br/>
+[Email: lucasmetron@gmail.com](mailto:lucasmetron@gmail.com)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

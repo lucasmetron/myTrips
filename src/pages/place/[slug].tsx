@@ -14,6 +14,7 @@ import PlacesTemplate, {
 export default function Place({ place }: PlaceTemplateProps) {
   const router = useRouter()
 
+  //enquanto não tiver o componente, retorna tela branca
   if (router.isFallback) return null
 
   return <PlacesTemplate place={place} />
