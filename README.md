@@ -10,7 +10,8 @@
 
 #### *NextJS
 #### *GraphQL 
-### *GraphCMS
+#### *GraphCMS
+#### *TypeScript
 #### *Styled Component
 
 
