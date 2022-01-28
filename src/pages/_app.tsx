@@ -16,6 +16,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#06092B" />
+        <meta name="google-site-verification" content="fbih7y0D8xoXrQvJXsaJHDJBViuKHRW462m1gjCUZrI" />
         <link
           rel="stylesheet"
           href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
