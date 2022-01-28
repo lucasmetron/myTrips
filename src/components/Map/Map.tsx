@@ -42,6 +42,7 @@ const Map = ({ places }: MapProps) => {
       center={[0, 0]}
       zoom={3}
       style={{ width: '100%', height: '100%' }}
+      worldCopyJump={true}
     >
       <CustomTileLayer />
 
