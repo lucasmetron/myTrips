@@ -1,6 +1,6 @@
 <div align="center">
   <img src="./src/assets/logo.svg" alt="Podcastr logo" style='width: 500px'>
-  
+
 </div>
 
 ### - A ideia do projeto é uma aplicação que mostra todos os lugares que já visitei e ainda quero visitar hehe
@@ -10,11 +10,12 @@
 ### - Nesta aplicação foram usados as seguintes tecnologias:
 
 #### *NextJS
-#### *GraphQL 
+#### *GraphQL
 #### *GraphCMS
 #### *TypeScript
 #### *Styled Component
 
+### Veja você mesmo: https://my-tripslucasrosa.vercel.app/
 
 ### Demonstração da aplicação
 ![Tela inicial](./src/assets/mytrips.gif)
@@ -27,7 +28,7 @@
 #### 4º Passo: Digite o comando ' cd myTrips ' para acessar a pasta do projeto
 #### 5º Passo: Digite o comando ' yarn install ' e ao finalizar digite o comando ' yarn dev '
 
-### Gostou do meu projeto!? :D Entre em contato comigo! 
+### Gostou do meu projeto!? :D Entre em contato comigo!
 [Linkedin](https://www.linkedin.com/in/lucas-rosa-058683102/) <br/>
 [Email: lucasmetron@gmail.com](mailto:lucasmetron@gmail.com)
 
